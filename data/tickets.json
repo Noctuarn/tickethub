@@ -1,0 +1,484 @@
+{
+  "tickets": [
+    {
+      "id": 1,
+      "departure": "Verkhovyna",
+      "destination": "Bukovel",
+      "date": "2023-12-19",
+      "time": "10:00",
+      "price": 50
+    },
+    {
+      "id": 2,
+      "departure": "Dolina",
+      "destination": "Tysmenytsia",
+      "date": "2023-12-20",
+      "time": "12:30",
+      "price": 35
+    },
+    {
+      "id": 3,
+      "departure": "Sniatyn",
+      "destination": "Nadvirna",
+      "date": "2023-12-19",
+      "time": "14:15",
+      "price": 40
+    },
+    {
+      "id": 4,
+      "departure": "Kalush",
+      "destination": "Bohorodchany",
+      "date": "2023-12-20",
+      "time": "16:45",
+      "price": 55
+    },
+    {
+      "id": 5,
+      "departure": "Ivano-Frankivsk",
+      "destination": "Kolomyia",
+      "date": "2023-12-19",
+      "time": "18:00",
+      "price": 30
+    },
+    {
+      "id": 6,
+      "departure": "Halych",
+      "destination": "Horodenka",
+      "date": "2023-12-20",
+      "time": "20:20",
+      "price": 45
+    },
+    {
+      "id": 7,
+      "departure": "Verkhovyna",
+      "destination": "Sniatyn",
+      "date": "2023-12-19",
+      "time": "11:30",
+      "price": 40
+    },
+    {
+      "id": 8,
+      "departure": "Dolina",
+      "destination": "Ivano-Frankivsk",
+      "date": "2023-12-20",
+      "time": "13:45",
+      "price": 35
+    },
+    {
+      "id": 9,
+      "departure": "Tysmenytsia",
+      "destination": "Kolomyia",
+      "date": "2023-12-19",
+      "time": "15:00",
+      "price": 30
+    },
+    {
+      "id": 10,
+      "departure": "Nadvirna",
+      "destination": "Halych",
+      "date": "2023-12-20",
+      "time": "17:10",
+      "price": 45
+    },
+    {
+      "id": 11,
+      "departure": "Kalush",
+      "destination": "Verkhovyna",
+      "date": "2023-12-19",
+      "time": "19:30",
+      "price": 50
+    },
+    {
+      "id": 12,
+      "departure": "Bohorodchany",
+      "destination": "Sniatyn",
+      "date": "2023-12-20",
+      "time": "21:45",
+      "price": 55
+    },
+    {
+      "id": 13,
+      "departure": "Ivano-Frankivsk",
+      "destination": "Horodenka",
+      "date": "2023-12-19",
+      "time": "10:15",
+      "price": 30
+    },
+    {
+      "id": 14,
+      "departure": "Kolomyia",
+      "destination": "Verkhovyna",
+      "date": "2023-12-20",
+      "time": "12:40",
+      "price": 40
+    },
+    {
+      "id": 15,
+      "departure": "Halych",
+      "destination": "Dolina",
+      "date": "2023-12-19",
+      "time": "14:50",
+      "price": 35
+    },
+    {
+      "id": 16,
+      "departure": "Horodenka",
+      "destination": "Tysmenytsia",
+      "date": "2023-12-20",
+      "time": "17:05",
+      "price": 45
+    },
+    {
+      "id": 17,
+      "departure": "Verkhovyna",
+      "destination": "Kalush",
+      "date": "2023-12-19",
+      "time": "19:20",
+      "price": 50
+    },
+    {
+      "id": 18,
+      "departure": "Sniatyn",
+      "destination": "Bohorodchany",
+      "date": "2023-12-20",
+      "time": "21:30",
+      "price": 55
+    },
+    {
+      "id": 19,
+      "departure": "Dolina",
+      "destination": "Ivano-Frankivsk",
+      "date": "2023-12-19",
+      "time": "11:00",
+      "price": 30
+    },
+    {
+      "id": 20,
+      "departure": "Tysmenytsia",
+      "destination": "Kolomyia",
+      "date": "2023-12-20",
+      "time": "13:15",
+      "price": 40
+    },
+    {
+      "id": 21,
+      "departure": "Nadvirna",
+      "destination": "Kalush",
+      "date": "2023-12-21",
+      "time": "10:30",
+      "price": 50
+    },
+    {
+      "id": 22,
+      "departure": "Bohorodchany",
+      "destination": "Ivano-Frankivsk",
+      "date": "2023-12-22",
+      "time": "12:45",
+      "price": 55
+    },
+    {
+      "id": 23,
+      "departure": "Kolomyia",
+      "destination": "Halych",
+      "date": "2023-12-21",
+      "time": "14:00",
+      "price": 40
+    },
+    {
+      "id": 24,
+      "departure": "Horodenka",
+      "destination": "Verkhovyna",
+      "date": "2023-12-22",
+      "time": "16:20",
+      "price": 45
+    },
+    {
+      "id": 25,
+      "departure": "Verkhovyna",
+      "destination": "Sniatyn",
+      "date": "2023-12-21",
+      "time": "18:30",
+      "price": 50
+    },
+    {
+      "id": 26,
+      "departure": "Dolina",
+      "destination": "Tysmenytsia",
+      "date": "2023-12-22",
+      "time": "20:45",
+      "price": 35
+    },
+    {
+      "id": 27,
+      "departure": "Sniatyn",
+      "destination": "Horodenka",
+      "date": "2023-12-21",
+      "time": "11:15",
+      "price": 40
+    },
+    {
+      "id": 28,
+      "departure": "Kalush",
+      "destination": "Verkhovyna",
+      "date": "2023-12-22",
+      "time": "13:30",
+      "price": 55
+    },
+    {
+      "id": 29,
+      "departure": "Bohorodchany",
+      "destination": "Dolina",
+      "date": "2023-12-21",
+      "time": "15:45",
+      "price": 45
+    },
+    {
+      "id": 30,
+      "departure": "Ivano-Frankivsk",
+      "destination": "Tysmenytsia",
+      "date": "2023-12-22",
+      "time": "17:00",
+      "price": 30
+    },
+    {
+      "id": 31,
+      "departure": "Halych",
+      "destination": "Nadvirna",
+      "date": "2023-12-21",
+      "time": "19:10",
+      "price": 45
+    },
+    {
+      "id": 32,
+      "departure": "Horodenka",
+      "destination": "Kolomyia",
+      "date": "2023-12-22",
+      "time": "21:25",
+      "price": 40
+    },
+    {
+      "id": 33,
+      "departure": "Verkhovyna",
+      "destination": "Ivano-Frankivsk",
+      "date": "2023-12-21",
+      "time": "10:45",
+      "price": 50
+    },
+    {
+      "id": 34,
+      "departure": "Dolina",
+      "destination": "Halych",
+      "date": "2023-12-22",
+      "time": "12:00",
+      "price": 35
+    },
+    {
+      "id": 35,
+      "departure": "Tysmenytsia",
+      "destination": "Horodenka",
+      "date": "2023-12-21",
+      "time": "14:20",
+      "price": 45
+    },
+    {
+      "id": 36,
+      "departure": "Nadvirna",
+      "destination": "Verkhovyna",
+      "date": "2023-12-22",
+      "time": "16:35",
+      "price": 50
+    },
+    {
+      "id": 37,
+      "departure": "Kalush",
+      "destination": "Sniatyn",
+      "date": "2023-12-21",
+      "time": "18:45",
+      "price": 55
+    },
+    {
+      "id": 38,
+      "departure": "Bohorodchany",
+      "destination": "Tysmenytsia",
+      "date": "2023-12-22",
+      "time": "20:00",
+      "price": 40
+    },
+    {
+      "id": 39,
+      "departure": "Ivano-Frankivsk",
+      "destination": "Nadvirna",
+      "date": "2023-12-21",
+      "time": "11:30",
+      "price": 30
+    },
+    {
+      "id": 40,
+      "departure": "Kolomyia",
+      "destination": "Horodenka",
+      "date": "2023-12-22",
+      "time": "13:50",
+      "price": 45
+    },
+    {
+      "id": 41,
+      "departure": "Verkhovyna",
+      "destination": "Horodenka",
+      "date": "2023-12-23",
+      "time": "10:00",
+      "price": 40
+      },
+      {
+      "id": 42,
+      "departure": "Dolina",
+      "destination": "Ivano-Frankivsk",
+      "date": "2023-12-24",
+      "time": "12:30",
+      "price": 50
+      },
+      {
+      "id": 43,
+      "departure": "Sniatyn",
+      "destination": "Nadvirna",
+      "date": "2023-12-23",
+      "time": "14:15",
+      "price": 45
+      },
+      {
+      "id": 44,
+      "departure": "Kalush",
+      "destination": "Bohorodchany",
+      "date": "2023-12-24",
+      "time": "16:45",
+      "price": 55
+      },
+      {
+      "id": 45,
+      "departure": "Ivano-Frankivsk",
+      "destination": "Kolomyia",
+      "date": "2023-12-23",
+      "time": "18:00",
+      "price": 50
+      },
+      {
+      "id": 46,
+      "departure": "Halych",
+      "destination": "Horodenka",
+      "date": "2023-12-24",
+      "time": "20:20",
+      "price": 40
+      },
+      {
+      "id": 47,
+      "departure": "Verkhovyna",
+      "destination": "Sniatyn",
+      "date": "2023-12-23",
+      "time": "11:30",
+      "price": 45
+      },
+      {
+      "id": 48,
+      "departure": "Dolina",
+      "destination": "Ivano-Frankivsk",
+      "date": "2023-12-24",
+      "time": "13:45",
+      "price": 55
+      },
+      {
+      "id": 49,
+      "departure": "Tysmenytsia",
+      "destination": "Kolomyia",
+      "date": "2023-12-23",
+      "time": "15:00",
+      "price": 50
+      },
+      {
+      "id": 50,
+      "departure": "Nadvirna",
+      "destination": "Halych",
+      "date": "2023-12-24",
+      "time": "17:10",
+      "price": 40
+      },
+      {
+      "id": 51,
+      "departure": "Kalush",
+      "destination": "Verkhovyna",
+      "date": "2023-12-23",
+      "time": "19:30",
+      "price": 45
+      },
+      {
+      "id": 52,
+      "departure": "Bohorodchany",
+      "destination": "Sniatyn",
+      "date": "2023-12-24",
+      "time": "21:45",
+      "price": 55
+      },
+      {
+      "id": 53,
+      "departure": "Ivano-Frankivsk",
+      "destination": "Horodenka",
+      "date": "2023-12-23",
+      "time": "10:15",
+      "price": 50
+      },
+      {
+      "id": 54,
+      "departure": "Kolomyia",
+      "destination": "Verkhovyna",
+      "date": "2023-12-24",
+      "time": "12:40",
+      "price": 45
+      },
+      {
+      "id": 55,
+      "departure": "Halych",
+      "destination": "Dolina",
+      "date": "2023-12-23",
+      "time": "14:50",
+      "price": 40
+      },
+      {
+      "id": 56,
+      "departure": "Horodenka",
+      "destination": "Tysmenytsia",
+      "date": "2023-12-24",
+      "time": "17:05",
+      "price": 50
+      },
+      {
+      "id": 57,
+      "departure": "Verkhovyna",
+      "destination": "Kalush",
+      "date": "2023-12-23",
+      "time": "19:20",
+      "price": 55
+      },
+      {
+      "id": 58,
+      "departure": "Sniatyn",
+      "destination": "Bohorodchany",
+      "date": "2023-12-24",
+      "time": "21:30",
+      "price": 45
+      },
+      {
+      "id": 59,
+      "departure": "Dolina",
+      "destination": "Burshtyn",
+      "date": "2023-12-23",
+      "time": "11:00",
+      "price": 40
+      },
+      {
+      "id": 60,
+      "departure": "Tysmenytsia",
+      "destination": "Kolomyia",
+      "date": "2023-12-24",
+      "time": "13:15",
+      "price": 50
+      }
+  ]
+}
