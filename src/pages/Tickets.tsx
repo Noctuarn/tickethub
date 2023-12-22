@@ -3,10 +3,13 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Ticket } from "../types/interfaces";
 import TicketCard from "../components/TicketCard/TicketCard";
+import { useAppSelector } from "../hooks/useAppSelector";
 
 const Tickets = () => {
   const { date, from, to } = useParams();
   const [tickets, setTickets] = useState<Ticket[]>();
+
+  const { name, money } = useAppSelector((state) => state.user);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -24,7 +27,7 @@ const Tickets = () => {
   return (
     <>
       <NavBar />
-      <div className="w-full min-h-screen bg-main-blue-dark flex flex-col justify-center items-center">
+      <div className="w-full min-h-screen bg-main-blue-dark flex flex-col justify-center items-center relative">
         {tickets && tickets.length > 0 ? (
           <div className="flex justify-between">
             {tickets.map((el) => (
@@ -35,12 +38,21 @@ const Tickets = () => {
                 departure={el.departure}
                 destination={el.destination}
                 price={el.price}
-                time={el.time}
+                deperatureTime={el.deperatureTime}
+                arrivalTime={el.arrivalTime}
+                carrier={el.carrier}
               />
             ))}
           </div>
         ) : (
-          <p className="text-white text-6xl font-bold">No tickets available...</p>
+          <p className="text-white text-6xl font-bold">
+            No tickets available...
+          </p>
+        )}
+        {name.length > 0 && (
+          <div className="absolute bottom-2 right-2 text-xl">
+            Your balance is <span className="text-main-crimson">{money}</span>
+          </div>
         )}
       </div>
     </>

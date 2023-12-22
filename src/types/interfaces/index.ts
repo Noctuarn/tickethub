@@ -3,6 +3,8 @@ export interface Ticket {
   departure: string;
   destination: string;
   date: string;
-  time: string;
+  deperatureTime: string;
+  arrivalTime: string;
   price: number;
+  carrier: string
 }

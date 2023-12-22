@@ -14,7 +14,7 @@ return (
 
         <div className="w-full min-h-screen bg-main-blue-dark flex flex-col justify-center items-center">
           <h1 className="text-5xl font-bold mb-6">{name}</h1>
-          <h2 className="text-xl text-gray-300 font-bold mb-20">Current balance: <span className="text-main-crimson">{money}$</span></h2>
+          <h2 className="text-xl text-gray-300 font-bold mb-20">Current balance: <span className="text-main-crimson">{money}₴</span></h2>
 
           <div className="mb-10">
             {tickets.length === 0 ? <h3>You don't have any tickets</h3> : null}

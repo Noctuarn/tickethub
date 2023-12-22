@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 const Journey = () => {
   const today = new Date().toISOString().split("T")[0];
   const [selectedDate, setSelectedDate] = useState(today);
+  const [passengersAmount, setPassengersAmount] = useState(1);
   const navigate = useNavigate();
 
   const handleDateChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -38,9 +39,15 @@ const Journey = () => {
     setSelectedFromCity(temp);
   };
 
+  const passangerAmountChangeHadler = (e: any) => {
+    const inputValue = parseInt(e.target.value, 10);
+    const newPassengersAmount = inputValue <= 0 ? 1 : inputValue;
+    setPassengersAmount(newPassengersAmount);
+  };
+
   const ticketFindHandler = () => {
     navigate(
-      `/tickets/${selectedDate}/${selectedFromCity}/${selectedToCity}`
+      `/tickets/${selectedDate}/${selectedFromCity}/${selectedToCity}/${passengersAmount}`
     );
   };
 
@@ -85,16 +92,24 @@ const Journey = () => {
             ))}
           </select>
 
-          <h3 className="text-2xl text-gray-700">Destination</h3>
+          <h3 className="text-2xl text-gray-700">To</h3>
         </div>
       </div>
 
       <div className="flex w-3/4 items-center text-main-crimson">
-        <div className="flex flex-col items-center gap-5 px-20 py-10 text-white">
-          <h3 className="text-xl">Have offers code ?</h3>
-          <button className="bg-main-blue px-6 py-2 text-lg uppercase font-bold">
-            View offers
-          </button>
+        <div className="flex flex-col items-center justify-center gap-5 bg-white px-10 py-20 mr-2">
+          <h3 className="text-2xl text-main-blue font-bold">
+            Amount of passanger:
+          </h3>
+          <div className="flex justify-center">
+            <input
+              className="text-4xl w-[50px]"
+              type="number"
+              value={passengersAmount}
+              onChange={passangerAmountChangeHadler}
+            />
+            <h5 className="text-3xl font-bold">passengers</h5>
+          </div>
         </div>
 
         <div className="flex flex-col items-center gap-5 bg-white px-20 py-14">

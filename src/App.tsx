@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Account from "./pages/Account";
 import Tickets from "./pages/Tickets";
+import TicketDetail from "./pages/TicketDetail";
 
 const App = () => {
   return (
@@ -10,7 +11,8 @@ const App = () => {
       <Routes>
         <Route element={<Home />} path="/"></Route>
         <Route element={<Login/>} path="/signup"/>
-        <Route element={<Tickets/>} path="/tickets/:date/:from/:to"/>
+        <Route element={<Tickets/>} path="/tickets/:date/:from/:to/:amount"/>
+        <Route element={<TicketDetail/>} path="/tickets/:amount/:id"/>
         <Route element={<Account/>} path="/account"/>
       </Routes>
     </div>
