@@ -1,14 +1,54 @@
 {
-    "users": [
-      {"id": 1, "name": "Roman", "email": "example@gmail.com", "password": "Хочукупитисало123", "tickets": [], "money": 200},
-      {"id": 2, "name": "Ivan", "email": "ivan@example.com", "password": "StrongPassword123", "tickets": [], "money": 200},
-      {"id": 3, "name": "Oksana", "email": "oksana@example.com", "password": "SecurePass456", "tickets": [], "money": 200},
-      {"id": 4, "name": "Maria", "email": "maria@example.com", "password": "Password789", "tickets": [], "money": 200},
-      {"id": 5, "name": "Andrii", "email": "andrii@example.com", "password": "SecretPass321", "tickets": [], "money": 200},
-      {"id": 6, "name": "Katya", "email": "katya@example.com", "password": "KatyaPass432", "tickets": [], "money": 200},
-      {"id": 7, "name": "Petro", "email": "petro@example.com", "password": "PetroPass987", "tickets": [], "money": 200},
-      {"id": 8, "name": "Olga", "email": "olga@example.com", "password": "Olga123Pass", "tickets": [], "money": 200},
-      {"id": 9, "name": "Vitaliy", "email": "vitaliy@example.com", "password": "VitaliyPass456", "tickets": [], "money": 200},
-      {"id": 10, "name": "Natalia", "email": "natalia@example.com", "password": "NataliaPass789", "tickets": [], "money": 200}
-    ]
-  }
+  "users": [
+    {
+      "id": 1,
+      "email": "example@gmail.com",
+      "password": "Хочукупитисало123"
+    },
+    {
+      "id": 2,
+      "email": "ivan@example.com",
+      "password": "StrongPassword123"
+    },
+    {
+      "id": 3,
+      "email": "oksana@example.com",
+      "password": "SecurePass456"
+    },
+    {
+      "id": 4,
+      "email": "maria@example.com",
+      "password": "Password789"
+    },
+    {
+      "id": 5,
+      "email": "andrii@example.com",
+      "password": "SecretPass321"
+    },
+    {
+      "id": 6,
+      "email": "katya@example.com",
+      "password": "KatyaPass432"
+    },
+    {
+      "id": 7,
+      "email": "petro@example.com",
+      "password": "PetroPass987"
+    },
+    {
+      "id": 8,
+      "email": "olga@example.com",
+      "password": "Olga123Pass"
+    },
+    {
+      "id": 9,
+      "email": "vitaliy@example.com",
+      "password": "VitaliyPass456"
+    },
+    {
+      "id": 10,
+      "email": "natalia@example.com",
+      "password": "NataliaPass789"
+    }
+  ]
+}

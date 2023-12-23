@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { Ticket } from "../types/interfaces";
 import NavBar from "../components/NavBar/NavBar";
 import Footer from "../components/Footer/Footer";
+import ModalMessage from "../components/ModalMessage/ModalMessage";
 
 import { useAppSelector } from "../hooks/useAppSelector";
 
@@ -31,6 +32,7 @@ const TicketDetail = () => {
 
   return (
     <>
+        <ModalMessage message="Скажи пароль від вайфайю"/>
       <NavBar />
       <div className="w-full min-h-screen bg-main-blue-dark flex flex-col justify-center items-center relative py-40">
         {ticketDetail && (
