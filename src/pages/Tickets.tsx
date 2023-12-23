@@ -6,7 +6,7 @@ import TicketCard from "../components/TicketCard/TicketCard";
 import { useAppSelector } from "../hooks/useAppSelector";
 
 const Tickets = () => {
-  const { date, from, to } = useParams();
+  const { date, from, to, amount } = useParams();
   const [tickets, setTickets] = useState<Ticket[]>();
 
   const { name, money } = useAppSelector((state) => state.user);
@@ -41,6 +41,7 @@ const Tickets = () => {
                 deperatureTime={el.deperatureTime}
                 arrivalTime={el.arrivalTime}
                 carrier={el.carrier}
+                amount={amount!}
               />
             ))}
           </div>

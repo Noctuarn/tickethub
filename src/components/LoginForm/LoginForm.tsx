@@ -2,8 +2,9 @@ import { useState } from "react";
 import { MdEmail, MdPassword } from "react-icons/md";
 import { FaTelegramPlane } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import usersData from "../../../data/users.json"; 
 
+import users from "../../../data/users.json";
+import usersData from "../../../data/usersData.json";
 
 import { useActions } from "../../hooks/useActions";
 import { userActions } from "../../redux/reducers/user.slice";
@@ -14,20 +15,35 @@ const LoginForm = () => {
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
-  const {setUser} = useActions(userActions);
+  const { setUser } = useActions(userActions);
 
   const handleLogin = (e: any) => {
     e.preventDefault();
 
-    const user = usersData.users.find(
+    if (email.length === 0 && password.length === 0) {
+      setErrorMessage("Please enter value in fields");
+      return
+    }
+
+    const user = users.users.find(
       (u) => u.email === email && u.password === password
     );
 
-    if (user) {
-        setUser({id: user.id, name: user.name, money: user.money, tickets: user.tickets})
+    const userData = usersData.usersData.find((u) => u.id === user?.id);
+
+    if (userData) {
+      setUser({
+        id: userData.id,
+        name: userData.name,
+        surname: userData.surname,
+        money: userData.money,
+        tickets: userData.tickets,
+        email: user?.email,
+        tel: userData.tel,
+      });
       navigate("/");
     } else {
-      setErrorMessage("Користувача з такими даними не знайдено.");
+      setErrorMessage("User not founded");
     }
   };
 
@@ -61,10 +77,7 @@ const LoginForm = () => {
         <div className="flex flex-row gap-3 items-center justify-between">
           <div className="form-control">
             <label className="label cursor-pointer">
-              <input
-                type="checkbox"
-                className="checkbox checkbox-error"
-              />
+              <input type="checkbox" className="checkbox checkbox-error" />
               <span className="sm:text-sm text-pastelBlue pl-2">
                 Remember me
               </span>

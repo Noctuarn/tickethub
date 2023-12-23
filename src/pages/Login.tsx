@@ -11,9 +11,9 @@ const Login = () => {
   };
 
   return (
-    <section className="container py-20 bg-main-blue-dark h-screen relative overflow-hidden transition-all">
-      <div className="w-[70%] m-auto rounded-xl shadow-3xl ">
-        <div className="flex flex-col items-center justify-between gap-8 p-5 md:p-10 lg:p-14">
+    <section className="container bg-main-blue-dark h-screen relative overflow-hidden transition-all">
+      <div className="w-[70%] m-auto rounded-xl shadow-3xl">
+        <div className="flex flex-col items-center justify-between gap-8   md:p-10 lg:p-14">
           <div>
             <img
               className="w-32 md:w-40 h-auto"

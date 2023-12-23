@@ -8,3 +8,7 @@ export interface Ticket {
   price: number;
   carrier: string
 }
+
+export interface TicketProps extends Ticket {
+  amount: string;
+}

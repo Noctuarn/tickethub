@@ -1,6 +1,8 @@
 import { MdEmail, MdPassword } from "react-icons/md";
 import { PiPasswordBold } from "react-icons/pi";
 import { FaTelegramPlane, FaUser } from "react-icons/fa";
+import { BsTelephoneFill } from "react-icons/bs";
+
 
 const SignUpForm = () => {
   return (
@@ -13,19 +15,45 @@ const SignUpForm = () => {
           <input
             type="text"
             className="px-3 py-2 w-full text-sm join-item outline-none bg-transparent"
-            placeholder="Full Name"
+            placeholder="First Name"
           />
         </div>
+
+        <div className="join bg-primary shadow-2xl p-2 flex items-center  border-2 border-white">
+          <label className="px-3 py-1 text-lg join-item text-pastelBlue border-r border-r-slate-400">
+            <FaUser />
+          </label>
+          <input
+            type="text"
+            className="px-3 py-2 w-full text-sm join-item outline-none bg-transparent"
+            placeholder="Last Name"
+          />
+        </div>
+
         <div className="join bg-primary shadow-2xl p-2 flex items-center  border-2 border-white">
           <label className="px-3 py-1 text-lg join-item text-pastelBlue border-r border-r-slate-400">
             <MdEmail />
           </label>
           <input
-            type="number"
+            type="email"
             className="px-3 py-2 w-full text-sm join-item outline-none bg-transparent"
             placeholder="Email"
           />
         </div>
+
+        <div className="join bg-primary shadow-2xl p-2 flex items-center  border-2 border-white">
+          <label className="px-3 py-1 text-lg join-item text-pastelBlue border-r border-r-slate-400">
+            <BsTelephoneFill />
+          </label>
+          <input
+            type="tel"
+            className="px-3 py-2 w-full text-sm join-item outline-none bg-transparent"
+            placeholder="Phone"
+          />
+        </div>
+
+
+
         <div className="join bg-primary shadow-2xl p-2 flex items-center  border-2 border-white">
           <label className="px-3 py-1 text-lg join-item text-pastelBlue border-r border-r-slate-400">
             <MdPassword />

@@ -1,0 +1,92 @@
+{
+  "usersData": [
+    {
+      "id": 1,
+      "name": "Roman",
+      "surname": "Shewchsenko",
+      "tel": "+329131123",
+      "tickets": [],
+      "money": 0
+    },
+    {
+      "id": 2,
+      "name": "Anna",
+      "surname": "Kovalenko",
+      "tel": "+428764532",
+      "tickets": [],
+      "money": 0
+    },
+    {
+      "id": 3,
+      "name": "Oleg",
+      "surname": "Ivanov",
+      "tel": "+587239801",
+      "tickets": [],
+      "money": 0
+    },
+    {
+      "id": 4,
+      "name": "Natalia",
+      "surname": "Petrenko",
+      "tel": "+672345678",
+      "tickets": [],
+      "money": 0
+    },
+    {
+      "id": 5,
+      "name": "Dmytro",
+      "surname": "Kozlov",
+      "tel": "+819456789",
+      "tickets": [],
+      "money": 0
+    },
+    {
+      "id": 6,
+      "name": "Olga",
+      "surname": "Melnik",
+      "tel": "+936891234",
+      "tickets": [],
+      "money": 0
+    },
+    {
+      "id": 7,
+      "name": "Ivan",
+      "surname": "Vysotskiy",
+      "tel": "+125677890",
+      "tickets": [],
+      "money": 0
+    },
+    {
+      "id": 8,
+      "name": "Olena",
+      "surname": "Vasilenko",
+      "tel": "+249876543",
+      "tickets": [],
+      "money": 0
+    },
+    {
+      "id": 9,
+      "name": "Sergey",
+      "surname": "Goncharov",
+      "tel": "+357642189",
+      "tickets": [],
+      "money": 0
+    },
+    {
+      "id": 10,
+      "name": "Yuliya",
+      "surname": "Kovalchuk",
+      "tel": "+488913244",
+      "tickets": [],
+      "money": 0
+    },
+    {
+      "id": 11,
+      "name": "Petro",
+      "surname": "Ivchenko",
+      "tel": "+623587904",
+      "tickets": [],
+      "money": 0
+    }
+  ]
+}
