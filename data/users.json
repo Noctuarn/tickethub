@@ -2,53 +2,53 @@
   "users": [
     {
       "id": 1,
-      "email": "example@gmail.com",
+      "email": "roman@gmail.com",
       "password": "Хочукупитисало123"
     },
     {
       "id": 2,
-      "email": "ivan@example.com",
+      "email": "anna@example.com",
       "password": "StrongPassword123"
     },
     {
       "id": 3,
-      "email": "oksana@example.com",
+      "email": "oleg@example.com",
       "password": "SecurePass456"
     },
     {
       "id": 4,
-      "email": "maria@example.com",
+      "email": "natalia@example.com",
       "password": "Password789"
     },
     {
       "id": 5,
-      "email": "andrii@example.com",
+      "email": "dmytro@example.com",
       "password": "SecretPass321"
     },
     {
       "id": 6,
-      "email": "katya@example.com",
-      "password": "KatyaPass432"
+      "email": "olga@example.com",
+      "password": "OlgaPass432"
     },
     {
       "id": 7,
-      "email": "petro@example.com",
+      "email": "ivan@example.com",
       "password": "PetroPass987"
     },
     {
       "id": 8,
-      "email": "olga@example.com",
-      "password": "Olga123Pass"
+      "email": "olena@example.com",
+      "password": "Olena123Pass"
     },
     {
       "id": 9,
-      "email": "vitaliy@example.com",
-      "password": "VitaliyPass456"
+      "email": "sergiy@example.com",
+      "password": "SergiyPass456"
     },
     {
       "id": 10,
-      "email": "natalia@example.com",
-      "password": "NataliaPass789"
+      "email": "yuliya@example.com",
+      "password": "YuliyaPass789"
     }
   ]
 }

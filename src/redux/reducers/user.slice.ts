@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { Ticket } from "../../types/interfaces";
+import { TicketProps } from "../../types/interfaces";
 
 type userType = {
   id: number | null;
@@ -8,7 +8,7 @@ type userType = {
   tel: string;
   email: string;
   money: number;
-  tickets: Ticket[];
+  tickets: TicketProps[];
 };
 
 const initialState: userType = {
@@ -38,7 +38,7 @@ const saveState = (state: userType) => {
     const serializedState = JSON.stringify(state);
     localStorage.setItem("userState", serializedState);
   } catch {
-    console.error("Error !!!")
+    console.error("Error !!!");
   }
 };
 
@@ -47,6 +47,16 @@ const userSlice = createSlice({
   initialState: loadState() || initialState,
 
   reducers: {
+    setNewUser: (state) => {
+      (state.id = null),
+        (state.name = ""),
+        (state.surname = ""),
+        (state.tel = ""),
+        (state.email = ""),
+        (state.money = 0),
+        (state.tickets = []);
+    },
+
     setUser: (state, action) => {
       const { id, name, money, tickets, email, tel, surname } = action.payload;
       state.id = id;
@@ -59,10 +69,34 @@ const userSlice = createSlice({
 
       saveState(state);
     },
+
     addTicket: (state, action) => {
-      state.tickets.push(action.payload);
+      const {
+        price,
+        id,
+        departure,
+        destination,
+        date,
+        deperatureTime,
+        arrivalTime,
+        carrier,
+        amount
+      } = action.payload;
+
+      state.tickets.push({
+        id,
+        departure,
+        destination,
+        date,
+        deperatureTime,
+        arrivalTime,
+        price,
+        carrier,
+        amount
+      });
+      state.money = state.money - price;
       saveState(state);
-    },
+    }, 
   },
 });
 

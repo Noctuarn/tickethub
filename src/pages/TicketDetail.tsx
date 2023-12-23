@@ -3,21 +3,30 @@ import { useParams } from "react-router-dom";
 import { Ticket } from "../types/interfaces";
 import NavBar from "../components/NavBar/NavBar";
 import Footer from "../components/Footer/Footer";
-import ModalMessage from "../components/ModalMessage/ModalMessage";
-
+import { useNavigate } from "react-router-dom";
 import { useAppSelector } from "../hooks/useAppSelector";
+
+import { useActions } from "../hooks/useActions";
+import { userActions } from "../redux/reducers/user.slice";
 
 const TicketDetail = () => {
   const { id, amount } = useParams();
   const [ticketDetail, setTicketDetail] = useState<Ticket>();
-  const { name, email } = useAppSelector((state) => state.user);
+  const { name, surname, email, tel } = useAppSelector((state) => state.user);
 
   const [userName, setUserName] = useState(name);
-  const [userSurName, setUserSurName] = useState("");
+  const [userSurName, setUserSurName] = useState(surname);
   const [userEmail, setUserEmail] = useState(email);
-  const [userPhone, setUserPhone] = useState("");
+  const [userPhone, setUserPhone] = useState(tel);
+  const [privacyChecked, setPrivacyChecked] = useState(false);
+  const [personalDataChecked, setPersonalDataChecked] = useState(false);
 
   const [isFormValid, setIsFormValid] = useState(false);
+  
+  const { addTicket } = useActions(userActions);
+  const {money} = useAppSelector(state => state.user)
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -30,9 +39,50 @@ const TicketDetail = () => {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    if (
+      userName &&
+      userSurName &&
+      userEmail &&
+      userPhone &&
+      personalDataChecked &&
+      privacyChecked
+    ) {
+      setIsFormValid(true);
+    } else {
+      setIsFormValid(false);
+    }
+  }, [
+    userName,
+    userSurName,
+    userEmail,
+    userPhone,
+    personalDataChecked,
+    privacyChecked,
+  ]);
+
+  const onBuyTicketHandler = () => {
+    if(money > ticketDetail?.price!) {
+      addTicket({
+        id: ticketDetail?.id,
+        destination: ticketDetail?.destination,
+        price: ticketDetail?.price,
+        departure: ticketDetail?.departure,
+        date: ticketDetail?.date,
+        deperatureTime: ticketDetail?.deperatureTime,
+        arrivalTime: ticketDetail?.arrivalTime,
+        carrier: ticketDetail?.carrier,
+        amount: amount
+      });
+      alert("Your ticket has been bought")
+      navigate("/");
+    } else {
+      alert("You don`t have enough money on your ballance")
+    } 
+  };
+
   return (
     <>
-        <ModalMessage message="Скажи пароль від вайфайю"/>
       <NavBar />
       <div className="w-full min-h-screen bg-main-blue-dark flex flex-col justify-center items-center relative py-40">
         {ticketDetail && (
@@ -129,6 +179,8 @@ const TicketDetail = () => {
                     className="w-[25px] h-[25px]"
                     type="checkbox"
                     id="privacy"
+                    checked={privacyChecked}
+                    onChange={() => setPrivacyChecked(!privacyChecked)}
                   />
                   <label className="font-semibold" htmlFor="privacy">
                     I accept the privacy policy
@@ -140,6 +192,10 @@ const TicketDetail = () => {
                     className="w-[25px] h-[25px]"
                     type="checkbox"
                     id="personalData"
+                    checked={personalDataChecked}
+                    onChange={() =>
+                      setPersonalDataChecked(!personalDataChecked)
+                    }
                   />
                   <label className="font-semibold" htmlFor="personalData">
                     Consent to the processing of personal data
@@ -147,8 +203,15 @@ const TicketDetail = () => {
                 </div>
               </div>
 
-                <button disabled={!isFormValid} className={`${isFormValid ? "" : "opacity-50"} w-full py-4 bg-main-crimson text-white text-lg`}>Buy ticket</button>
-
+              <button
+                disabled={!isFormValid}
+                onClick={onBuyTicketHandler}
+                className={`${
+                  isFormValid ? "opacity-100" : "opacity-50"
+                } w-full py-4 bg-main-crimson text-white text-lg`}
+              >
+                Buy ticket
+              </button>
             </div>
 
             <div className="w-[30%] px-4 py-10 rounded-lg bg-white text-black max-h-[470px] sticky top-5">

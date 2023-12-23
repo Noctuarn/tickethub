@@ -6,7 +6,7 @@
       "surname": "Shewchsenko",
       "tel": "+329131123",
       "tickets": [],
-      "money": 0
+      "money": 200
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "surname": "Kovalenko",
       "tel": "+428764532",
       "tickets": [],
-      "money": 0
+      "money": 150
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "surname": "Ivanov",
       "tel": "+587239801",
       "tickets": [],
-      "money": 0
+      "money": 300
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "surname": "Petrenko",
       "tel": "+672345678",
       "tickets": [],
-      "money": 0
+      "money": 70
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@
       "surname": "Kozlov",
       "tel": "+819456789",
       "tickets": [],
-      "money": 0
+      "money": 200
     },
     {
       "id": 6,
@@ -46,7 +46,7 @@
       "surname": "Melnik",
       "tel": "+936891234",
       "tickets": [],
-      "money": 0
+      "money": 230
     },
     {
       "id": 7,
@@ -54,7 +54,7 @@
       "surname": "Vysotskiy",
       "tel": "+125677890",
       "tickets": [],
-      "money": 0
+      "money": 160
     },
     {
       "id": 8,
@@ -62,15 +62,15 @@
       "surname": "Vasilenko",
       "tel": "+249876543",
       "tickets": [],
-      "money": 0
+      "money": 120
     },
     {
       "id": 9,
-      "name": "Sergey",
+      "name": "Sergiy",
       "surname": "Goncharov",
       "tel": "+357642189",
       "tickets": [],
-      "money": 0
+      "money": 100
     },
     {
       "id": 10,
@@ -78,7 +78,7 @@
       "surname": "Kovalchuk",
       "tel": "+488913244",
       "tickets": [],
-      "money": 0
+      "money": 400
     }
   ]
 }
