@@ -1,15 +1,30 @@
 import { TicketProps } from "../../types/interfaces";
 import { useAppSelector } from "../../hooks/useAppSelector";
 
+import { useActions } from "../../hooks/useActions";
+import { userActions } from "../../redux/reducers/user.slice";
+
 const UserTicket = ({
   amount,
+  id,
   arrivalTime,
   carrier,
   departure,
   deperatureTime,
   destination,
+  price,
 }: TicketProps) => {
   const { name, surname } = useAppSelector((state) => state.user);
+  const { returnTicket } = useActions(userActions);
+
+  const returnTicketHandler = () => {
+    const result = window.confirm("You sure you want to return your ticket ?");
+
+    if (result) {
+      alert("Your ticket has been returned succesfully");
+      returnTicket({ ticketId: id, price: price * Number(amount) });
+    }
+  };
 
   return (
     <div className="flex gap-4 h-[213px]">
@@ -49,8 +64,12 @@ const UserTicket = ({
         </div>
       </div>
 
-        <button className="w-[100px] font-semibold py-4 bg-main-crimson">Return the ticket</button>
-
+      <button
+        onClick={returnTicketHandler}
+        className="w-[100px] font-semibold py-4 bg-main-crimson"
+      >
+        Return the ticket
+      </button>
     </div>
   );
 };

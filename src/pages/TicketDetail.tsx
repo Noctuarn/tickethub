@@ -62,7 +62,7 @@ const TicketDetail = () => {
   ]);
 
   const onBuyTicketHandler = () => {
-    if(money > ticketDetail?.price!) {
+    if(money > ticketDetail?.price! * Number(amount)) {
       addTicket({
         id: ticketDetail?.id,
         destination: ticketDetail?.destination,

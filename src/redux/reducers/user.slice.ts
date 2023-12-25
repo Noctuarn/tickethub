@@ -97,7 +97,16 @@ const userSlice = createSlice({
       state.money = state.money - price;
       saveState(state);
     }, 
-  },
+
+    returnTicket: (state, action) => {
+      const { ticketId, price } = action.payload;
+    
+      state.money += price;
+      state.tickets = state.tickets.filter((ticket) => ticket.id !== ticketId);
+      saveState(state);
+    }
+    
+  }
 });
 
 export const userReducer = userSlice.reducer;
