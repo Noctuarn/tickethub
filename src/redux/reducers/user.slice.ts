@@ -55,6 +55,8 @@ const userSlice = createSlice({
         (state.email = ""),
         (state.money = 0),
         (state.tickets = []);
+
+        saveState(state);
     },
 
     setUser: (state, action) => {
